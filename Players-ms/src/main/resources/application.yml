@@ -1,0 +1,24 @@
+server:
+ port: 1100
+#server:
+ # port: 1200
+
+#server:
+ #port: 1300
+ 
+  
+spring:
+  application:
+    name: PLAYERS-MS
+    
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/rest_jpa_db
+    username: root
+    password: root@123
+
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
